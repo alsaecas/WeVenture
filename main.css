@@ -1,0 +1,144 @@
+/* General style */
+* {
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;    
+  }
+
+/* Style the body */
+body{
+  background-color: rgb(220, 220, 222);
+}
+
+/* Style the header */
+.header {
+  padding-bottom: 20px;
+  color: black;
+  text-align: center;
+  font-size: 25px;  
+}
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the wrapper */
+.wrapper{
+  text-align: center;
+}
+
+/* Style the input box */
+.in_list {
+  display: flex;
+  margin: auto;
+  border: none;
+  align-items: center;
+  box-shadow: 2px 2px 2px #888888;
+  border-radius: 5px;
+  width: 600px;
+  padding: 17px 20px 17px;
+  font-size: 16px;
+}
+/* Style the placeholder in input box */
+::placeholder {
+  color: rgba(0, 0, 0, 0.541);
+  opacity: 1; /* Firefox */
+}
+
+/* Style the list*/
+ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style-type:none;
+  padding-top: 25px;
+}
+  
+/* Style the list items */
+li {
+  cursor: pointer;
+  position: relative;
+  box-shadow: 2px 2px 2px #888888;
+  transition: 0.2s;
+  color: black;
+  text-align: left;
+  width: 600px;
+  padding: 18px;
+  font-size: 16px;
+  background: rgb(236, 236, 238);
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}  
+/* Set all odd list items to a different color (zebra-stripes) */
+li:nth-child(odd) {
+  background: rgb(255, 255, 255);
+}
+/* Round the top borders of the first element */
+li:first-child{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* Round the bottom borders of the last element */
+li:last-child{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+} 
+/* Light-Green background-color on hover */
+li:hover {
+  background: rgb(236, 243, 222);
+}
+/* When clicked on, add color and strike out text */
+li.checked {
+  color: rgb(50, 207, 46);
+  text-decoration: line-through;
+}
+
+/* Style the delete button */
+.close {
+  margin-top: 14px;
+  margin-right: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 5px 8px 5px 8px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 2px;
+  font-size: 12px;
+  background-color: rgb(240, 239, 239);
+}
+/* Darker on hover */ 
+.close:hover {
+  background-color: #726f6e;
+  color: white;
+}
+  
+/* Align the Clear All button */
+.button{
+  padding-top: 25px;
+  padding-left: 540px;
+  position: relative;
+}
+
+/* Style the Clear all button */
+.delall{
+  color: black;
+  background-color: rgb(240, 239, 239);
+  padding: 5px 8px 5px 8px;
+  border: 1px solid black;
+  border-radius: 2px;
+  font-size: 12px;
+  cursor: pointer;
+}  
+/* Darker on hover */ 
+.delall:hover {
+  background-color: #726f6e;
+  color: white;
+}
+
+
+  
